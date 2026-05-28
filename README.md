@@ -1,5 +1,5 @@
 #MiniGit
-´´´
+---
 ##Descripción del Proyecto
 
 MiniGit es un sistema simplificado de control de versiones desarrollado en Go con fines educativos. 
