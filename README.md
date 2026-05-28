@@ -134,3 +134,27 @@ https://github.com/Last-kHn/minigit
 * Comparación de versiones
 * Optimización de commits
 * Mejor manejo de archivos
+
+## Requisitos
+- Go 1.22+
+- Linux o windows
+
+## Ejecución
+```bash
+go run .
+```
+
+## Compilación
+
+```bash
+go build -o minigit
+```
+## Uso
+
+```bash
+./minigit init
+./minigit add archivo.txt
+./minigit commit "Primer commit"
+./minigit log
+```
+
