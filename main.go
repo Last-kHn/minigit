@@ -41,6 +41,9 @@ func main() {
 	case "log":
 		showLog()
 
+	case "status":
+		ShowStatus()
+
 	default:
 		fmt.Println("Comando no reconocido")
 	}

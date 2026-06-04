@@ -57,11 +57,23 @@ func createCommit(message string) {
 
 	for _, stagedFile := range files {
 
-		file.WriteString("- " + stagedFile.Name() + "\n")
+	file.WriteString("- " + stagedFile.Name() + "\n")
 	}
 
+	// Limpiar staging
+	for _, stagedFile := range files {
+
+	filePath := filepath.Join(
+		".minigit/staging",
+		stagedFile.Name(),
+	)
+
+	os.Remove(filePath)
+	}	
+
 	fmt.Println("Commit realizado:", commitID)
-}
+	fmt.Println("Staging limpiado correctamente.")
+	}
 
 func showLog() {
 
