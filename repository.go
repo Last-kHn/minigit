@@ -18,4 +18,5 @@ func initRepository() {
 	}
 
 	fmt.Println("Repositorio inicializado")
+  Logger.Println("Repositorio inicializado")
 }

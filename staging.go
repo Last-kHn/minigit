@@ -1,4 +1,3 @@
-
 package main
 
 import (
@@ -45,5 +44,9 @@ func addFile(filename string) {
 	}
 
 	fmt.Println("Archivo agregado correctamente")
-}
 
+	Logger.Println(
+		"Archivo agregado: " +
+			filepath.Base(filename),
+	)
+}

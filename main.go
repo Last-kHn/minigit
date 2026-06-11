@@ -8,6 +8,8 @@ import (
 
 func main() {
 
+  InitLogger()
+
 	if len(os.Args) < 2 {
 		fmt.Println("Uso: minigit <comando>")
 		return

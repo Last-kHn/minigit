@@ -72,6 +72,8 @@ func createCommit(message string) {
 	}	
 
 	fmt.Println("Commit realizado:", commitID)
+  Logger.Println("Commit creado: " + commitID)
+
 	fmt.Println("Staging limpiado correctamente.")
 	}
 
