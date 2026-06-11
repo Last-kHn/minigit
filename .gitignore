@@ -1,0 +1,8 @@
+i# Ejecutable compilado
+minigit
+
+# Logs
+minigit.log
+
+# Datos internos de MiniGit
+.minigit/
