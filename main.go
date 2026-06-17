@@ -46,6 +46,14 @@ func main() {
 	case "status":
 		ShowStatus()
 
+  case "branch":
+    if len(os.Args) < 3 {
+        listBranches()
+        return
+    }
+
+    createBranch(os.Args[2])
+
 	default:
 		fmt.Println("Comando no reconocido")
 	}

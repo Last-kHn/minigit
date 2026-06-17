@@ -11,6 +11,7 @@ func initRepository() {
 		".minigit",
 		".minigit/staging",
 		".minigit/commits",
+    ".minigit/branches",
 	}
 
 	for _, dir := range dirs {
