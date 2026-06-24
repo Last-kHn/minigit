@@ -7,11 +7,25 @@ import (
 
 func TestCreateBranch(t *testing.T) {
 
-	os.MkdirAll(".minigit/branches", 0755)
+	InitLogger()
+
+	initRepository()
 
 	createBranch("testing")
 
 	if _, err := os.Stat(".minigit/branches/testing.txt"); os.IsNotExist(err) {
-		t.Error("La rama no fue creada")
+		t.Error("No se creó la rama")
 	}
+}
+
+func TestDuplicateBranch(t *testing.T) {
+
+	InitLogger()
+
+	initRepository()
+
+	createBranch("develop")
+	createBranch("develop")
+
+	// La prueba pasa si no ocurre panic
 }
