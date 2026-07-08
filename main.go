@@ -53,6 +53,11 @@ func main() {
     }
 
     createBranch(os.Args[2])
+  case "help":
+    showHelp()
+
+  case "version":
+    showVersion()
 
 	default:
 		fmt.Println("Comando no reconocido")
