@@ -1,6 +1,0 @@
-Commit: 282a592e
-Fecha: 2026-06-04 06:26:30
-Mensaje: Primer commit
-
-Archivos:
-- archivo.txt

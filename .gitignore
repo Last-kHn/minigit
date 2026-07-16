@@ -1,8 +1,21 @@
-i# Ejecutable compilado
+# Repositorio generado por MiniGit
+.minigit/
+
+# Ejecutable compilado
 minigit
+minigigt
 
 # Logs
-minigit.log
+*.log
 
-# Datos internos de MiniGit
-.minigit/
+# Archivos temporales
+*.tmp
+*.bak
+
+# Configuración de editores
+.vscode/
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
